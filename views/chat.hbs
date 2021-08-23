@@ -1,0 +1,70 @@
+{{!-- <h1 style="text-align: center;">{{title}}</h1> --}}
+<div class="chat__second">
+  <div class="container" style="overflow: hidden;">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="chat__join_chat">
+          <div class="chat__join__header">
+            <div class="chat__logo">
+              <span class="chat__logo__span"><i class="fas fa-comments"></i></span>
+              <span class=" text_chat">Chatogram X</span>
+            </div>
+            <a href="/" class="btn chat_exit"><span><i class="fal fa-sign-out-alt"></i></span>
+              Chiqib ketish</a>
+          </div>
+
+
+
+
+          <header class="header">
+            <div class="container">
+              <div class="row">
+                <div class="nav-toggle">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </header>
+          <!-- header end -->
+
+          <!-- nav start -->
+          <div class="nav-overlay chat_main"></div>
+          <nav class="nav chat__sidebar col-lg-4">
+            <div class="head">
+              <strong class="chat__romname">Guruh nomi</strong>
+              <div class="close">&times;</div>
+              <h2 class="chat__room_name" id="room_name">
+
+              </h2>
+              <strong class="chat_users">Foydalanuvchilar</strong>
+              <ul class="chat_userss" id="users">
+
+              </ul>
+            </div>
+          </nav>
+
+
+
+
+
+          <div class="chat__messages">
+          </div>
+        </div>
+        <div class="chat_form_chat">
+          <form id="chat-form" class="chat__form_chat">
+            <input type="text" required placeholder="Xat yuborish" class="form-control chat__message" />
+            <button type="submit" class="btn chat2__form_btn"><i class="fab fa-telegram-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js"
+  integrity="sha512-aTKlYRb1QfU1jlF3k+aS4AqTpnTXci4R79mkdie/bp6Xm51O5O3ESAYhvg6zoicj/PD6VYY0XrYwsWLcvGiKZQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="javascripts/main.js"></script>
+<script src="javascripts/script.js"></script>

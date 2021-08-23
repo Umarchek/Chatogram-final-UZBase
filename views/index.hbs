@@ -1,0 +1,48 @@
+<div class="top__chat">
+</div>
+
+<div class="chat">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-5">
+                <div class="chat__join">
+                    <div class="chat__header">
+                        <div class="chat__logo">
+                            <span class="chat__logo__span"><i class="fas fa-comments"></i></span> Chatogram X
+                        </div>
+                        <label for="chat__btn" class="labal__btn">Kirish
+                            <span><i class="far fa-chevron-right"></i></span>
+                        </label>
+                    </div>
+                    <div class="chat__join_header">
+                        <h4 class="chat__sign">Qo'shilish</h4>
+                        <p class="chat__sign__text">Iltimos ismingizni va qo'shiluvchi guruhingizni kiriting</p>
+                    </div>
+                    <div class="chat__main">
+                        <form class="chat__form" action="/chat">
+                            <div class="form__input-username form-group">
+                                <label for="exampleInputEmail1" class="input__username-label">Ismingizni yozing</label>
+                                <input type="text" class="form-control input__username" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Ismingizni yozing" name="username"
+                                    required>
+                            </div>
+                            <div class="form__input-room form-group">
+                                <label for="exampleFormControlSelect1" class="input__username-room">Guruhga
+                                    kirish <span class="spanmn">(yoki yaratish)</span></label>
+                                <div class="select__div">
+                                    <input class="input__select form-control" placeholder="Guruhning nomini yozing" id="exampleFormControlSelect1"
+                                        name="room">
+                                    </input>
+                                    <label class="select__arrow" for="exampleFormControlSelect1"></label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-info form__btn_send" id="chat__btn">Chatga
+                                kirish</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="bottom__text">{{title}} rasmiy saytiga xush kelibsiz</p>
+    </div>
+</div>
