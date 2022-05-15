@@ -14,9 +14,9 @@ io.on('connection', socket => {
         const user = userJoin(userQuery.username, userQuery.room, socket.id)
         socket.join(user.room)
 
-        socket.emit('message', formotMessage('Chatogram Admin', 'Welcome to Chatogram'))
+        socket.emit('message', formotMessage('Admin [BOT]', 'Здарова'))
 
-        socket.broadcast.to(user.room).emit('join', formotMessage('Chatogram Admin', `${user.username} joined the chat`))
+        socket.broadcast.to(user.room).emit('join', formotMessage('Admin [BOT]', `${user.username} присоединился к чату`))
 
         // users, room
         io.to(user.room).emit('roomUsers', {
@@ -38,7 +38,7 @@ io.on('connection', socket => {
     socket.on('disconnect', () => {
         const user = userLeft(socket.id)
         if (user) {
-            io.to(user.room).emit('leave', formotMessage('Chatogram Admin', `${user.username} left the chat`))
+            io.to(user.room).emit('leave', formotMessage('Admin [BOT]', `${user.username} покинул чат`))
 
             // users, room
             io.to(user.room).emit('roomUsers', {
